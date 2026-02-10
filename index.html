@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantry Genius</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">pantry genius</div>
+            <!-- <div class="user-profile">
+                <i data-feather="bell"></i>
+                <img src="https://placehold.co/40x40/FF7E5F/FFFFFF?text=R" alt="User Avatar">
+            </div> -->
+        </header>
+
+        <main class="main-content">
+            <div class="left-panel">
+                <section class="search-section">
+                    <h1>What ingredients do you have?</h1>
+                    <div class="input-form">
+                        <i data-feather="search"></i>
+                        <input type="text" id="ingredient-input" placeholder="e.g., tomatoes, cheese...">
+                        <button id="add-ingredient-btn">Add</button>
+                    </div>
+                </section>
+
+                <section class="ingredients-display">
+                    <div id="ingredient-list" class="ingredient-tags">
+                        <!-- Ingredient tags will be dynamically added here -->
+                    </div>
+                     <button id="find-recipes-btn">Find Recipes</button>
+                </section>
+
+                <section class="results-section">
+                    <h2>Recipes for you</h2>
+                    <div id="recipe-results" class="recipe-grid">
+                        <!-- Recipe cards will be displayed here -->
+                    </div>
+                </section>
+                 <div class="add-recipe-section">
+                    <h2>Add Your Own Recipe</h2>
+                    <form id="add-recipe-form">
+                        <input type="text" id="new-recipe-name" placeholder="Recipe Name" required>
+                        <input type="text" id="new-recipe-ingredients" placeholder="Ingredients (comma-separated)" required>
+                        <textarea id="new-recipe-instructions" placeholder="Instructions (one step per line)" required rows="5"></textarea>
+                        <button type="submit" id="add-recipe-btn">Add Recipe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="featured-dish">
+                    <h3>Dish of the day</h3>
+                    <h4>Spicy Thai Basil Chicken</h4>
+                    <p>A fast, flavorful, and fiery stir-fry that comes together in minutes.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
+
